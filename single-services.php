@@ -14,7 +14,7 @@ while (have_posts()) : the_post(); ?>
       <div class="container">
          <h1><?php $sp_obj->get_title(); ?></h1>
          <?php the_content(); ?>
-         <div class="button">ОСТАВИТЬ ЗАЯВКУ</div>
+         <div class="button send-request">ОСТАВИТЬ ЗАЯВКУ</div>
       </div>
    </section>
    <section id="portfolio" class="portfolio">
