@@ -134,7 +134,7 @@ get_header();
                <h3><?php the_title(); ?></h3>
                <h4> <?php the_excerpt(); ?></h4>
                <a href="<?php the_permalink(); ?>">
-                  <div class="button">Получить скидку</div>
+                  <div class="button send-request">Получить скидку</div>
                </a>
             </div>
 
