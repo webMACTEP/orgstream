@@ -170,28 +170,74 @@ jQuery(document).ready(function ($) {
       },
    });
 
-   function video() {
-      if (!clicked) {
-         playVideo();
-         console.log('1st');
-         window.clicked = true;
-      } else if (clicked = 2) {
-         player.pauseVideo();
-         window.clicked = false;
-      } else {
-         resumeVideo();
-         window.clicked = 2;
-      }
-   }
+   // var swiper2 = new Swiper('.slider02', {
+   //    mode: 'horizontal',
+   //    onSlideClick: video,
+   //    //direction: 'horizontal',
+   //    // freeMode: true,
+   //    //allowTouchMove: false,
+   //    speed: 400,
+   //    spaceBetween: 35,
+   //    navigation: {
+   //       nextEl: '.swiper-button-next2',
+   //       //prevEl: '.swiper-button-prev2',
+   //    },
+   //    pagination: {
+   //       el: ".swiper-pagination2",
+   //       clickable: true,
+   //       renderBullet: function (index, className) {
+   //          return '<span class="' + className + '">' + (index + 1) + "</span>";
+   //       },
+   //    },
+
+   //    // thumbs: {
+   //    //    swiper: swiper7,
+   //    // },
+
+
+   //    //centeredSlides: true,
+   //    slidesPerView: 1.3,
+   //    autoplay: false,
+   //    //freeMode: true,
+   //    //centerInsufficientSlides: true,
+   //    breakpoints: {
+   //       320: {
+   //          slidesPerView: 1,
+   //          spaceBetween: 5
+   //       },
+   //       415: {
+   //          slidesPerView: 1.1,
+   //          spaceBetween: 15
+   //       },
+   //       900: {
+   //          slidesPerView: 1.15,
+   //          spaceBetween: 15
+   //       },
+   //       1120: {
+   //          slidesPerView: 1.3,
+   //          spaceBetween: 35
+   //       },
+   //       1340: {
+   //          slidesPerView: 1.3,
+   //          spaceBetween: 35
+   //       },
+   //       1570: {
+   //          slidesPerView: 1.3,
+   //          spaceBetween: 35
+   //       },
+   //       1630: {
+   //          slidesPerView: 1.3,
+   //          spaceBetween: 35
+   //       },
+   //       7000: {
+   //          slidesPerView: 1.3,
+   //          spaceBetween: 35
+   //       }
+
+   //    },
+   // });
 
    var swiper2 = new Swiper('.slider02', {
-      mode: 'horizontal',
-      onSlideClick: video,
-      //direction: 'horizontal',
-      // freeMode: true,
-      //allowTouchMove: false,
-      speed: 400,
-      spaceBetween: 35,
       navigation: {
          nextEl: '.swiper-button-next2',
          //prevEl: '.swiper-button-prev2',
@@ -203,55 +249,40 @@ jQuery(document).ready(function ($) {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
          },
       },
-
-      // thumbs: {
-      //    swiper: swiper7,
-      // },
-
-
-      //centeredSlides: true,
-      slidesPerView: 1.3,
-      autoplay: false,
-      //freeMode: true,
-      //centerInsufficientSlides: true,
-      breakpoints: {
-         320: {
-            slidesPerView: 1,
-            spaceBetween: 5
-         },
-         415: {
-            slidesPerView: 1.1,
-            spaceBetween: 15
-         },
-         900: {
-            slidesPerView: 1.15,
-            spaceBetween: 15
-         },
-         1120: {
-            slidesPerView: 1.3,
-            spaceBetween: 35
-         },
-         1340: {
-            slidesPerView: 1.3,
-            spaceBetween: 35
-         },
-         1570: {
-            slidesPerView: 1.3,
-            spaceBetween: 35
-         },
-         1630: {
-            slidesPerView: 1.3,
-            spaceBetween: 35
-         },
-         7000: {
-            slidesPerView: 1.3,
-            spaceBetween: 35
-         }
-
-      },
    });
+   (function ($) {
+      jQuery(document).ready(function ($) {
+         swiper.on("transitionEnd", function (swiper) {
+            var currentSlide, slideType, player, command;
+            currentSlide = $('.swiper-container').find(".swiper-slide-active");
+            previousSlide = $('.swiper-container').find(".swiper-slide-prev");
 
+            slideType = currentSlide.attr("class").split(" ")[1];
+            player = currentSlide.find("iframe").get(0);
+            command = {
+               "event": "command",
+               "func": "playVideo"
+            };
+            if (player != undefined) {
+               player.contentWindow.postMessage(JSON.stringify(command), "*");
+            }
 
+            slideType = previousSlide.attr("class");
+            if (slideType != undefined) {
+               slideType = slideType.split(" ")[1];
+               player = previousSlide.find("iframe").get(0);
+               command = {
+                  "event": "command",
+                  "func": "pauseVideo"
+               };
+               // If you don't using autoplay you should use "stopVideo" instead of "pauseVideo"
+               if (player != undefined) {
+                  player.contentWindow.postMessage(JSON.stringify(command), "*");
+               }
+            }
+         });
+      });
+   })(jQuery);
 
 
 
