@@ -250,39 +250,38 @@ jQuery(document).ready(function ($) {
          },
       },
    });
-   (function ($) {
-      jQuery(document).ready(function ($) {
-         swiper.on("transitionEnd", function (swiper) {
-            var currentSlide, slideType, player, command;
-            currentSlide = $('.swiper-container').find(".swiper-slide-active");
-            previousSlide = $('.swiper-container').find(".swiper-slide-prev");
 
-            slideType = currentSlide.attr("class").split(" ")[1];
-            player = currentSlide.find("iframe").get(0);
-            command = {
-               "event": "command",
-               "func": "playVideo"
-            };
-            if (player != undefined) {
-               player.contentWindow.postMessage(JSON.stringify(command), "*");
-            }
 
-            slideType = previousSlide.attr("class");
-            if (slideType != undefined) {
-               slideType = slideType.split(" ")[1];
-               player = previousSlide.find("iframe").get(0);
-               command = {
-                  "event": "command",
-                  "func": "pauseVideo"
-               };
-               // If you don't using autoplay you should use "stopVideo" instead of "pauseVideo"
-               if (player != undefined) {
-                  player.contentWindow.postMessage(JSON.stringify(command), "*");
-               }
-            }
-         });
-      });
-   })(jQuery);
+   swiper.on("transitionEnd", function (swiper) {
+      var currentSlide, slideType, player, command;
+      currentSlide = $('.swiper-container').find(".swiper-slide-active");
+      previousSlide = $('.swiper-container').find(".swiper-slide-prev");
+
+      slideType = currentSlide.attr("class").split(" ")[1];
+      player = currentSlide.find("iframe").get(0);
+      command = {
+         "event": "command",
+         "func": "playVideo"
+      };
+      if (player != undefined) {
+         player.contentWindow.postMessage(JSON.stringify(command), "*");
+      }
+
+      slideType = previousSlide.attr("class");
+      if (slideType != undefined) {
+         slideType = slideType.split(" ")[1];
+         player = previousSlide.find("iframe").get(0);
+         command = {
+            "event": "command",
+            "func": "pauseVideo"
+         };
+         // If you don't using autoplay you should use "stopVideo" instead of "pauseVideo"
+         if (player != undefined) {
+            player.contentWindow.postMessage(JSON.stringify(command), "*");
+         }
+      }
+   });
+
 
 
 
