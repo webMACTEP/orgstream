@@ -169,8 +169,27 @@ jQuery(document).ready(function ($) {
 
       },
    });
+
+   function video() {
+      if (!clicked) {
+         playVideo();
+         console.log('1st');
+         window.clicked = true;
+      } else if (clicked = 2) {
+         player.pauseVideo();
+         window.clicked = false;
+      } else {
+         resumeVideo();
+         window.clicked = 2;
+      }
+   }
+
    var swiper2 = new Swiper('.slider02', {
+      mode: 'horizontal',
+      onSlideClick: video,
       //direction: 'horizontal',
+      // freeMode: true,
+      //allowTouchMove: false,
       speed: 400,
       spaceBetween: 35,
       navigation: {
