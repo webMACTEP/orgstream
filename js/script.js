@@ -95,6 +95,26 @@ jQuery(document).ready(function ($) {
       });
    });
 
+   $('.header__burger, .header__list').click(function (event) {
+      $('.header__burger, .header__menu').toggleClass('active');
+      $('body').toggleClass('lock');
+
+   });
+
+
+
+   $('.burger, .mnav').click(function (event) {
+      $('.mmenu').toggleClass('active');
+      $('body').toggleClass('lock');
+
+   });
+   $('.close').click(function (event) {
+      $('.mmenu').removeClass('active');
+      $('body').removeClass('lock');
+
+   });
+
+
 
 
    var swiper7 = new Swiper(".myswiper", {
@@ -170,72 +190,7 @@ jQuery(document).ready(function ($) {
       },
    });
 
-   // var swiper2 = new Swiper('.slider02', {
-   //    mode: 'horizontal',
-   //    onSlideClick: video,
-   //    //direction: 'horizontal',
-   //    // freeMode: true,
-   //    //allowTouchMove: false,
-   //    speed: 400,
-   //    spaceBetween: 35,
-   //    navigation: {
-   //       nextEl: '.swiper-button-next2',
-   //       //prevEl: '.swiper-button-prev2',
-   //    },
-   //    pagination: {
-   //       el: ".swiper-pagination2",
-   //       clickable: true,
-   //       renderBullet: function (index, className) {
-   //          return '<span class="' + className + '">' + (index + 1) + "</span>";
-   //       },
-   //    },
 
-   //    // thumbs: {
-   //    //    swiper: swiper7,
-   //    // },
-
-
-   //    //centeredSlides: true,
-   //    slidesPerView: 1.3,
-   //    autoplay: false,
-   //    //freeMode: true,
-   //    //centerInsufficientSlides: true,
-   //    breakpoints: {
-   //       320: {
-   //          slidesPerView: 1,
-   //          spaceBetween: 5
-   //       },
-   //       415: {
-   //          slidesPerView: 1.1,
-   //          spaceBetween: 15
-   //       },
-   //       900: {
-   //          slidesPerView: 1.15,
-   //          spaceBetween: 15
-   //       },
-   //       1120: {
-   //          slidesPerView: 1.3,
-   //          spaceBetween: 35
-   //       },
-   //       1340: {
-   //          slidesPerView: 1.3,
-   //          spaceBetween: 35
-   //       },
-   //       1570: {
-   //          slidesPerView: 1.3,
-   //          spaceBetween: 35
-   //       },
-   //       1630: {
-   //          slidesPerView: 1.3,
-   //          spaceBetween: 35
-   //       },
-   //       7000: {
-   //          slidesPerView: 1.3,
-   //          spaceBetween: 35
-   //       }
-
-   //    },
-   // });
 
    var swiper2 = new Swiper('.slider02', {
       navigation: {
@@ -289,25 +244,6 @@ jQuery(document).ready(function ($) {
 
 
 
-
-   $('.header__burger, .header__list').click(function (event) {
-      $('.header__burger, .header__menu').toggleClass('active');
-      $('body').toggleClass('lock');
-
-   });
-
-
-
-   $('.burger, .mnav').click(function (event) {
-      $('.mmenu').toggleClass('active');
-      $('body').toggleClass('lock');
-
-   });
-   $('.close').click(function (event) {
-      $('.mmenu').removeClass('active');
-      $('body').removeClass('lock');
-
-   });
 
 
 

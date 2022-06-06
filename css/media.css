@@ -42,7 +42,7 @@
     font-size: 18px;
   }
   .page p {
-    max-width: 280px;
+    max-width: 100%;
     font-weight: 400;
     font-size: 14px;
     line-height: 160.19%;
