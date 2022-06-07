@@ -1,0 +1,347 @@
+.m01,
+.m02,
+.m07,
+.m12,
+.m13,
+.m14,
+.m15,
+.m09,
+.m10 {
+   display: none;
+}
+.body {
+   position: relative;
+   &.lock {
+      overflow: hidden;
+   }
+}
+.mmenu {
+   display: none;
+}
+
+@media (max-width: 1119px) {
+   .page .container {
+      background-size: 50%;
+   }
+   .page {
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 60px 0px;
+   }
+   .page .button {
+      padding: 10px 15px;
+      font-size: 18px;
+   }
+   .page p {
+      max-width: 280px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160.19%;
+   }
+   .main .in05a {
+      display: none;
+   }
+   .page h1 {
+      max-width: 65%;
+      margin: 30px 0px 60px 0px;
+      padding: 80px 0px 0px 0px;
+      font-size: 34px;
+      line-height: 120.69%;
+   }
+   .mmenu {
+      z-index: 100;
+      display: block;
+      position: absolute;
+      top: -130%;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      &.active {
+         top: 0%;
+      }
+      ul {
+         padding: 110px 0px 0px 0px;
+      }
+      li {
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 183.19%;
+         text-align: center;
+         text-decoration-line: underline;
+
+         a {
+            color: #ffffff;
+         }
+      }
+      .mtel {
+         margin: 40px 0px 0px 0px;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 103.19%;
+         text-align: center;
+         a {
+            color: #ffe814;
+         }
+      }
+      .close {
+         position: absolute;
+         right: 20px;
+         top: 20px;
+      }
+      .mob01 {
+         position: absolute;
+      }
+      .mob02 {
+         position: absolute;
+         top: 60%;
+      }
+      .mob03 {
+         position: absolute;
+         right: 0;
+         top: 40%;
+      }
+   }
+
+   .header .banner {
+      margin: 0px 0px 30px 0px;
+   }
+   .container {
+      padding: 0px 15px;
+   }
+   .logo {
+   }
+   .burger {
+      display: block;
+   }
+   .m07 {
+      width: 140px;
+      top: 1820px;
+      right: 35%;
+      display: block;
+      position: absolute;
+   }
+   .m13 {
+      top: -30px;
+      right: 0;
+      display: block;
+      position: absolute;
+   }
+   .m15 {
+      top: 1050px;
+      left: 0;
+      display: block;
+      position: absolute;
+   }
+   .m14 {
+      top: 600px;
+      right: 0;
+      display: block;
+      position: absolute;
+   }
+
+   .m01 {
+      width: 40px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 10px;
+   }
+   .m12 {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 120px;
+   }
+   .m02 {
+      display: block;
+      width: 120px;
+      position: absolute;
+      right: 35%;
+      top: -30px;
+   }
+   .m09 {
+      display: block;
+      position: absolute;
+      right: 10px;
+      width: 80px;
+      top: -60px;
+   }
+   .m10 {
+      display: block;
+      text-align: center;
+      margin: -130px 0px 0px 0px;
+   }
+
+   .dtnav,
+   .tel,
+   .in01,
+   .in02,
+   .in03,
+   .in04,
+   .in05,
+   .in06,
+   .in07,
+   .in08,
+   .in09,
+   .in11,
+   .in10 {
+      display: none;
+   }
+   .intro h1 {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 138.19%;
+   }
+   .intro .subtitle {
+      bottom: -150px;
+   }
+   .intro .button {
+      font-size: 18px;
+      margin: 180px 0px 0px 0px;
+   }
+   .header .banner .row {
+      margin: 0px 0px 80px 0px;
+      flex-direction: column;
+      text-align: center;
+      h3 {
+         margin: 15px 0px 15px 0px;
+      }
+   }
+   .header .banner .butt {
+      margin: 0px 0px -20px 0px;
+   }
+   .intro {
+      margin: 80px 0px 0px 0px;
+   }
+   .us .title {
+      font-size: 20px;
+      top: -90px;
+      left: -200px;
+   }
+   .us .wrap {
+      padding: 0px 0px 0px 50px;
+   }
+   .services .title {
+      font-size: 20px;
+      top: -120px;
+      left: -260px;
+   }
+   .services .item,
+   .services .slide img {
+      display: none;
+   }
+   .services .slider01 {
+      margin: 0px 0px 0px 50px;
+      padding: 0px 0px 60px 0px;
+   }
+   .services {
+      margin: 50px 0px 0px 0px;
+      padding: 0px 0px 70px 0px;
+   }
+   .services .slide h2 {
+      font-size: 20px;
+      line-height: 120.69%;
+   }
+   .services .slide {
+      height: 350px;
+      padding: 15px;
+      p {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 160.19%;
+      }
+   }
+   .services .slide .button {
+      font-size: 19px;
+      padding: 10px 20px;
+      left: 15px;
+      bottom: 20px;
+   }
+   .main .swiper-pagination-bullet {
+      width: 12px !important;
+      height: 12px !important;
+   }
+   .main .swiper-pagination-bullet-active {
+      width: 60px !important;
+   }
+   .swiper-pagination {
+      left: -20px !important;
+   }
+   .hot .title {
+      font-size: 20px;
+      left: -110px;
+      top: 130px;
+   }
+   .hot .wrapper {
+      padding: 0px 0px 0px 40px;
+   }
+   .hot {
+      padding: 80px 0px 30px 0px;
+      h3 {
+         font-size: 24px;
+      }
+      h4 {
+         font-size: 20px;
+      }
+   }
+   .hot .button {
+      font-size: 19px;
+      padding: 10px 20px;
+   }
+   .hot .item {
+      height: auto;
+      padding: 20px 20px 140px 20px;
+   }
+   .prof h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 135.69%;
+   }
+   .prof .button {
+      font-size: 19px;
+      padding: 10px 20px;
+      left: 60px;
+      right: auto;
+   }
+   .prof h3 {
+      margin: 40px 60px 120px 60px;
+   }
+   .prof .wrapper {
+      flex-direction: column;
+   }
+   .prof .yellow h5 {
+      padding: 10px 0;
+      font-size: 16px;
+      transform: none;
+      margin: 0px 0px 0px 0px;
+   }
+   .prof .yellow {
+      width: 200px;
+      margin: 0px 0px 0px 60px;
+   }
+   .portfolio .title {
+      font-size: 20px;
+      left: -45px;
+      top: 50px;
+   }
+   .portfolio .slider02 {
+      margin: 0px 0px 0px 40px;
+   }
+   .portfolio .swiper-slide {
+      height: 140px;
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+   .portfolio {
+      padding: 60px 0px 100px 0px;
+   }
+   .footer .wrapper {
+      margin: 30px 0px 0px 0px;
+      align-items: flex-start;
+      flex-direction: column;
+   }
+   .footer .col {
+      margin: 0px 0px 30px 0px;
+   }
+}

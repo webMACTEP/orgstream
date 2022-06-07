@@ -23,13 +23,6 @@
 }
 
 @media (max-width: 1119px) {
-  #services .container, #portfolio .container{
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .main .swiper-pagination2 {
-    margin: 30px auto 0px auto;
-  }
   .page .container {
     background-size: 50%;
   }
@@ -42,7 +35,7 @@
     font-size: 18px;
   }
   .page p {
-    max-width: 100%;
+    max-width: 280px;
     font-weight: 400;
     font-size: 14px;
     line-height: 160.19%;
@@ -271,6 +264,9 @@
   .main .swiper-pagination-bullet-active {
     width: 60px !important;
   }
+  .swiper-pagination {
+    left: -20px !important;
+  }
   .hot .title {
     font-size: 20px;
     left: -110px;
@@ -342,10 +338,6 @@
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 220px;
-  }
-  .swiper-button-next, .swiper-button-next2 {
-    display: none;
   }
   .portfolio {
     padding: 60px 0px 100px 0px;
@@ -363,10 +355,4 @@
   .footer .col {
     margin: 0px 0px 30px 0px;
   }
-
-  .portfolio iframe {
-	width: calc(20vh * 1.77);
-    height: 26vh;
-  }
-  
 }
