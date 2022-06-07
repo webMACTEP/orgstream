@@ -20,6 +20,12 @@
 }
 
 @media (max-width: 1119px) {
+   .articles .row {
+      flex-direction: column;
+   }
+   .blog .wrapper {
+      flex-direction: column;
+   }
    .page .container {
       background-size: 50%;
    }
