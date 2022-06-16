@@ -1,6 +1,7 @@
 <?php
 /*
-
+Template Name: Съемка и монтаж мероприятий и праздников
+Template Post Type: services
 */
 
 get_header();
@@ -23,7 +24,7 @@ while (have_posts()) : the_post(); ?>
          <div class="slider02 swiper-container">
             <div class="swiper-wrapper">
                <?php
-               $pc = new WP_Query('post_type=portfolio&category_name=glavnaya-stranicza'); ?>
+               $pc = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov'); ?>
                <?php while ($pc->have_posts()) : $pc->the_post(); ?>
 
                   <div class="swiper-slide slide">
