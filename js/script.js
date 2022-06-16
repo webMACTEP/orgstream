@@ -124,13 +124,13 @@ jQuery(document).ready(function ($) {
       watchSlidesProgress: true,
    });
 
-   var swiper2 = new Swiper('.slider01', {
+   var swiper1 = new Swiper('.slider01', {
       //direction: 'horizontal',
       speed: 400,
       spaceBetween: 35,
       navigation: {
          nextEl: '.swiper-button-next',
-         // prevEl: '.swiper-button-prev',
+         prevEl: '.swiper-button-prev',
       },
       pagination: {
          el: ".swiper-pagination",
@@ -192,7 +192,7 @@ jQuery(document).ready(function ($) {
    var swiper2 = new Swiper('.slider02', {
       navigation: {
          nextEl: '.swiper-button-next2',
-         //prevEl: '.swiper-button-prev2',
+         prevEl: '.swiper-button-prev2',
       },
       pagination: {
          el: ".swiper-pagination2",
@@ -200,6 +200,41 @@ jQuery(document).ready(function ($) {
          renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
          },
+      },
+      breakpoints: {
+         320: {
+            slidesPerView: 1,
+            spaceBetween: 5
+         },
+         415: {
+            slidesPerView: 1.1,
+            spaceBetween: 15
+         },
+         900: {
+            slidesPerView: 1.15,
+            spaceBetween: 15
+         },
+         1120: {
+            slidesPerView: 1.3,
+            spaceBetween: 35
+         },
+         1340: {
+            slidesPerView: 1.3,
+            spaceBetween: 35
+         },
+         1570: {
+            slidesPerView: 1.3,
+            spaceBetween: 35
+         },
+         1630: {
+            slidesPerView: 1.3,
+            spaceBetween: 35
+         },
+         7000: {
+            slidesPerView: 1.3,
+            spaceBetween: 35
+         }
+
       },
    });
 

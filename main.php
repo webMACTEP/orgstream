@@ -115,6 +115,7 @@ get_header();
 
       </div>
       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
 
 
@@ -177,7 +178,7 @@ get_header();
 
       </div>
       <div class="swiper-button-next2"></div>
-
+      <div class="swiper-button-prev2"></div>
       <div class="swiper-pagination2"></div>
    </div>
 </section>

@@ -183,12 +183,27 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  /* background: url("../img/arrow.svg") 0 0/100% no-repeat;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); */
-
-  /* left: 10px;
-  right: auto; */
+  position: absolute;
+  z-index: 777;
+  width: 92px;
+  height: 174px;
+  top: 400px;
+  transform: rotate(180deg);
+  background: url("../img/arrow.svg") 0 0/100% no-repeat;
+  left: 130px;
+  right: auto;
+}
+.swiper-button-prev2,
+.swiper-container-rtl .swiper-button-next {
+  position: absolute;
+  z-index: 777;
+  width: 92px;
+  height: 174px;
+  top: 90px;
+  transform: rotate(180deg);
+  background: url("../img/arrow.svg") 0 0/100% no-repeat;
+  left: 130px;
+  right: auto;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
@@ -206,7 +221,7 @@
   z-index: 777;
   width: 92px;
   height: 174px;
-  top: 200px;
+  top: 90px;
   background: url("../img/arrow.svg") 0 0/100% no-repeat;
   right: 10px;
   left: auto;
