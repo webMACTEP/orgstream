@@ -453,6 +453,7 @@ h1 {
 }
 
 .services .item {
+  width: auto !important;
   margin: 0px 20px 20px 0px;
   padding: 10px 10px;
   font-weight: 400;
@@ -460,6 +461,10 @@ h1 {
   line-height: 120.69%;
   color: #000;
   background: #ffffff;
+}
+
+.services .item.swiper-slide-thumb-active {
+  background: #ffe814;
 }
 
 .services .item:hover {
@@ -474,7 +479,7 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-width: 100%;
+  min-width: 95%;
 }
 
 .services .title {

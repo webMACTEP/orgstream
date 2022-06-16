@@ -309,10 +309,14 @@ h1 {
       }
    }
    .item {
+      &.swiper-slide-thumb-active {
+         background: #ffe814;
+      }
       &:hover {
          cursor: pointer;
          background: #ffe814;
       }
+      width: auto !important;
       margin: 0px 20px 20px 0px;
       padding: 10px 10px;
       font-weight: 400;
@@ -325,7 +329,7 @@ h1 {
       padding: 0px 0px 0px 120px;
       display: flex;
       flex-wrap: wrap;
-      min-width: 100%;
+      min-width: 95%;
    }
    .title {
       span {
