@@ -27,7 +27,7 @@
 				<li><a href="<?php echo get_home_url(); ?>#services">Услуги</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#hot">Акции и скидки</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#portfolio">Портфолио</a></li>
-				<li><a href="<?php echo get_home_url(); ?>blogs/start">Блог</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/blogs/start">Блог</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#footer">Контакты</a></li>
 			</ul>
 		</nav>
