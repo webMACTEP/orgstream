@@ -20,7 +20,15 @@ while (have_posts()) : the_post(); ?>
    </section>
    <section id="portfolio" class="portfolio">
       <div class="container">
-         <div class="title">ПОРТФОЛИО</div>
+         <?php
+         $qqq = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov');
+         if ($qqq->have_posts()) { ?>
+            <div class="title">ПОРТФОЛИО</div>
+         <?php } else { ?>
+
+         <?php } ?>
+
+
          <div class="slider02 swiper-container">
             <div class="swiper-wrapper">
                <?php
@@ -41,6 +49,9 @@ while (have_posts()) : the_post(); ?>
          <div class="swiper-pagination2"></div>
       </div>
    </section>
+
+
+
 
 <?php
 
