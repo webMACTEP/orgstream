@@ -23,6 +23,17 @@
 }
 
 @media (max-width: 1119px) {
+	
+
+  #services .container, #portfolio .container{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .main .swiper-pagination2 {
+    margin: 30px auto 0px auto;
+  }	
+	
+	
   iframe {
     max-width: 100%;
     max-height: 200px;

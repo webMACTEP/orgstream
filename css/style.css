@@ -836,3 +836,36 @@ h1 {
 .articles .cont p {
   margin: 0px 0px 30px 0px;
 }
+.form-input {
+	border: 1px solid #000;
+	padding: 20px;
+	font-size: 20px;
+	width: 100%;
+}
+.form-submit {
+	padding: 18px;
+	font-size: 20px;
+	color: #FFF;
+	background-color: #DD1818;
+	text-transform: uppercase;
+}
+
+.form-file::-webkit-file-upload-button {
+	padding: 16px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #DD1818;
+	background-color: #FFF;
+	border: 2px solid #DD1818;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.portfolio iframe {
+	width: calc(60vh * 1.77);
+    height: 60vh;
+}
+#services .container, #portfolio .container  {
+    width: calc(((100% - 1120px) / 2) + 1120px) !important;
+	max-width: calc(((100% - 1120px) / 2) + 1120px) !important;
+    margin-right: 0;
+  }
