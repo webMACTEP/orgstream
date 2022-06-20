@@ -128,7 +128,7 @@ get_header();
       <div class="wrapper">
 
          <?php
-         $pc = new WP_Query('post_type=hot'); ?>
+         $pc = new WP_Query('post_type=hot&category_name=glavnaya-stranicza'); ?>
          <?php while ($pc->have_posts()) : $pc->the_post(); ?>
 
             <div class="item">
@@ -165,7 +165,7 @@ get_header();
       <div class="slider02 swiper-container">
          <div class="swiper-wrapper">
             <?php
-            $pc = new WP_Query('post_type=portfolio'); ?>
+            $pc = new WP_Query('post_type=portfolio&category_name=glavnaya-stranicza'); ?>
             <?php while ($pc->have_posts()) : $pc->the_post(); ?>
 
                <div class="swiper-slide slide">

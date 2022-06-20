@@ -18,63 +18,69 @@ while (have_posts()) : the_post(); ?>
          <div class="button send-request">ОСТАВИТЬ ЗАЯВКУ</div>
       </div>
    </section>
-   <section id="hot" class="hot">
-      <div class="container">
-         <div class="title">Горящие предложения</div>
-         <div class="wrapper">
-
-            <?php
-            $pc = new WP_Query('post_type=hot'); ?>
-            <?php while ($pc->have_posts()) : $pc->the_post(); ?>
-
-               <div class="item">
-                  <h3><?php the_title(); ?></h3>
-                  <h4> <?php the_excerpt(); ?></h4>
-                  <a href="<?php the_permalink(); ?>">
-                     <div class="button send-request">Получить скидку</div>
-                  </a>
-               </div>
-
-            <?php endwhile; ?>
 
 
+   <?php
+   $zzz = new WP_Query('post_type=hot&category_name=semka-i-montazh-meropriyatij-i-prazdnikov');
+   if ($zzz->have_posts()) { ?>
+      <section id="hot" class="hot">
+         <div class="container">
+            <!-- <div class="title">Горящие предложения</div> -->
+            <div class="wrapper">
 
-         </div>
-      </div>
-   </section>
-
-   <section id="portfolio" class="portfolio">
-      <div class="container">
-         <?php
-         $qqq = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov');
-         if ($qqq->have_posts()) { ?>
-            <div class="title">ПОРТФОЛИО</div>
-         <?php } else { ?>
-
-         <?php } ?>
-
-
-         <div class="slider02 swiper-container">
-            <div class="swiper-wrapper">
                <?php
-               $pc = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov'); ?>
+               $pc = new WP_Query('post_type=hot&category_name=semka-i-montazh-meropriyatij-i-prazdnikov'); ?>
                <?php while ($pc->have_posts()) : $pc->the_post(); ?>
 
-                  <div class="swiper-slide slide">
-                     <a href="<?php the_permalink(); ?>"><?php the_field('rolik'); ?></a>
+                  <div class="item">
+                     <h3><?php the_title(); ?></h3>
+                     <h4> <?php the_excerpt(); ?></h4>
+                     <a href="<?php the_permalink(); ?>">
+                        <div class="button send-request">Получить скидку</div>
+                     </a>
                   </div>
 
                <?php endwhile; ?>
 
+
+
             </div>
-
          </div>
-         <div class="swiper-button-next2"></div>
+      </section>
+   <?php } else { ?>
+   <?php } ?>
 
-         <div class="swiper-pagination2"></div>
-      </div>
-   </section>
 
+
+
+   <?php
+   $qqq = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov');
+   if ($qqq->have_posts()) { ?>
+      <section id="portfolio" class="portfolio">
+         <div class="container">
+            <div class="title">ПОРТФОЛИО</div>
+            <div class="slider02 swiper-container">
+               <div class="swiper-wrapper">
+                  <?php
+                  $pc = new WP_Query('post_type=portfolio&category_name=semka-i-montazh-meropriyatij-i-prazdnikov'); ?>
+                  <?php while ($pc->have_posts()) : $pc->the_post(); ?>
+
+                     <div class="swiper-slide slide">
+                        <a href="<?php the_permalink(); ?>"><?php the_field('rolik'); ?></a>
+                     </div>
+
+                  <?php endwhile; ?>
+
+               </div>
+
+            </div>
+            <div class="swiper-button-next2"></div>
+
+            <div class="swiper-pagination2"></div>
+         </div>
+      </section>
+   <?php } else { ?>
+   <?php } ?>
 
 
 
