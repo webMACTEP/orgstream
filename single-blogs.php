@@ -16,20 +16,20 @@ while (have_posts()) : the_post(); ?>
          <p><?php the_excerpt(); ?></p>
          <div class="wrapper">
             <div class="item">
-               <div class="num">2</div>
-               <span>Полных дня онлайн</span>
+               <div class="num"><?php the_field('polnyh_dnya'); ?></div>
+               <span><?php the_field('polnyh_dnya_t', 9); ?></span>
             </div>
             <div class="item">
-               <div class="num">1000+</div>
-               <span>Участников</span>
+               <div class="num"><?php the_field('uchastnikov'); ?></div>
+               <span><?php the_field('uchastnikov_t'); ?></span>
             </div>
             <div class="item">
-               <div class="num">24</div>
-               <span>Спикера</span>
+               <div class="num"><?php the_field('spikera'); ?></div>
+               <span><?php the_field('spikera_t', 9); ?></span>
             </div>
             <div class="item">
-               <div class="num">8</div>
-               <span>Профессоров</span>
+               <div class="num"><?php the_field('professorov'); ?></div>
+               <span><?php the_field('professorov_t', 9); ?></span>
             </div>
          </div>
 
