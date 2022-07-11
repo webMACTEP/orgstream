@@ -657,6 +657,7 @@ h1 {
 }
 
 .footer {
+  border-top: 1px solid #fff;
   color: #828282;
   padding: 40px 0px 30px 0px;
 }
@@ -835,6 +836,29 @@ h1 {
 
 .articles .cont p {
   margin: 0px 0px 30px 0px;
+}
+
+.statyi {
+  margin-bottom: 125px;
+}
+
+.statyi ul {
+  max-width: 510px;
+}
+
+.statyi li {
+  margin-bottom: 35px;
+}
+
+.statyi li a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 179.19%;
+  color: #fff;
+}
+
+.statyi li a:hover {
+  text-decoration: underline;
 }
 .form-input {
 	border: 1px solid #000;
