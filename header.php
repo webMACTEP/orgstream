@@ -27,7 +27,7 @@
 				<li><a href="<?php echo get_home_url(); ?>#services">Услуги</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#hot">Акции и скидки</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#portfolio">Портфолио</a></li>
-				<li><a href="<?php echo get_home_url(); ?>/blogs/start">Блог</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/statyi/">Блог</a></li>
 				<li><a href="<?php echo get_home_url(); ?>#footer">Контакты</a></li>
 			</ul>
 		</nav>
@@ -40,8 +40,8 @@
 			<div class="container">
 				<div class="m12"><img src="<?php echo get_image('in12.svg') ?>" alt=""></div>
 				<div class="row">
-					<h3>Видео на выпускной вечер со скидкой 20%</h3>
-					<a href="http://d.medcongress.su/services/semka-i-montazh-meropriyatij-i-prazdni/">
+					<h3>Скидка на съемку до 20%</h3>
+					<a href="https://orgstream.ru/hot/pervyj-podkast-so-skidkoj-20/ ">
 						<div class="butt">ЗАКАЗАТЬ</div>
 					</a>
 				</div>
@@ -56,7 +56,7 @@
 						<li><a href="<?php echo get_home_url(); ?>#services">Услуги</a></li>
 						<li><a href="<?php echo get_home_url(); ?>#hot">Акции и скидки</a></li>
 						<li><a href="<?php echo get_home_url(); ?>#portfolio">Портфолио</a></li>
-						<li><a href="<?php echo get_home_url(); ?>/blogs/start">Блог</a></li>
+						<li><a href="<?php echo get_home_url(); ?>/statyi/">Блог</a></li>
 						<li><a href="<?php echo get_home_url(); ?>#footer">Контакты</a></li>
 					</ul>
 				</nav>
