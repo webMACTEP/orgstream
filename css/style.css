@@ -892,4 +892,7 @@ h1 {
     width: calc(((100% - 1120px) / 2) + 1120px) !important;
 	max-width: calc(((100% - 1120px) / 2) + 1120px) !important;
     margin-right: 0;
-  }
+}
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
+    background: #DD1818; 
+}
