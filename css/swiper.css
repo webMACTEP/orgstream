@@ -187,7 +187,7 @@
   z-index: 777;
   width: 92px;
   height: 174px;
-  top: 400px;
+  top: 200px;
   transform: rotate(180deg);
   background: url("../img/arrow.svg") 0 0/100% no-repeat;
   left: 130px;
@@ -211,7 +211,7 @@
   z-index: 777;
   width: 92px;
   height: 174px;
-  top: 400px;
+  top: 200px;
   background: url("../img/arrow.svg") 0 0/100% no-repeat;
   right: 10px;
   left: auto;
